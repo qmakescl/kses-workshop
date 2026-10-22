@@ -1,0 +1,8 @@
+variable,label,type,unit,values_range,missing_code,timepoint,note
+age,수술 시 나이,numeric,year,18-90,NA,preop,
+sex,성별,categorical,,1=male; 2=female,NA,preop,
+tear_ap,파열 전후 직경,numeric,mm,0-50,NA,intraop,관절경 측정
+repair,봉합 방법,categorical,,SR=single row; DR=double row,NA,intraop,
+ases_pre,수술 전 ASES,numeric,point,0-100,NA,preop,
+ases_6m,수술 후 6개월 ASES,numeric,point,0-100,NA,6mo,
+retear,재파열 여부,binary,,0=no; 1=yes,NA,6mo,MRI
