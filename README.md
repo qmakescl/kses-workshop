@@ -24,7 +24,9 @@ Antigravity IDE(또는 Antigravity 확장을 사용하는 VS Code)를 열고, �
 
 두 IDE 모두 저장소 주소를 묻는 입력창에 `https://github.com/qmakescl/kses-workshop.git`을 붙여넣습니다. 저장 위치로 `kses/` 폴더를 선택하면 그 안에 `kses-workshop/` 폴더가 만들어집니다. 복제가 끝나면 안내에 따라 **`kses-workshop` 폴더를 엽니다.**
 
-개인 데이터를 가져온 분은 저장소 바깥의 `kses/private-data/`에 파일을 둡니다. 분석 환경과 Python 가상환경은 각 실습 단계에서 구성합니다.
+복제한 `kses-workshop/` 폴더를 연 뒤 **Trust this folder**가 표시되면 이 저장소의 작성자를 확인하고 신뢰합니다. 이어서 IDE의 터미널을 열어 `kses-workshop/` 루트에서 `uv init --python 3.12`, `uv venv`를 차례로 실행합니다. Python 패키지는 이후 실습 단계에서 설치합니다.
+
+개인 데이터를 가져온 분은 저장소 바깥의 `kses/private-data/`에 파일을 둡니다.
 
 ## 폴더 구조
 
@@ -35,7 +37,9 @@ kses/
 │   ├─ data/mock/            ← 모의 데이터 (에이전트 생성)
 │   ├─ docs/                 ← 프로파일, 코드북, 프롬프트 모음
 │   ├─ R/                    ← R 스크립트
-│   ├─ python/               ← 실습 중 uv 프로젝트와 가상환경을 만들 폴더
+│   ├─ python/               ← Python 실습 스크립트
+│   ├─ pyproject.toml        ← 실습 중 저장소 루트에 생성
+│   ├─ .venv/                ← 실습 중 저장소 루트에 생성
 │   ├─ output/               ← 표, 그림
 │   └─ scripts/              ← 실습 중 사용할 보조 스크립트
 └─ private-data/             ← 실제 개인 데이터 (저장소 바깥, 에이전트 비노출)

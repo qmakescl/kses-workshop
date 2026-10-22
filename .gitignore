@@ -17,7 +17,7 @@ output/*
 renv/library/
 
 # Python
-python/.venv/
+.venv/
 python/data/
 __pycache__/
 *.pyc
