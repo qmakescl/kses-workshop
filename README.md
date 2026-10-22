@@ -8,23 +8,23 @@
 
 ## 시작하기
 
-1. 이 저장소를 `kses/kses-workshop`에 `git clone`합니다. 개인 데이터를 가져오신 분은 `kses/private-data/`에 데이터 파일을 둡니다.
-2. VS Code에서 `kses-workshop` 폴더를 엽니다. (**`kses` 폴더가 아니라 `kses-workshop` 폴더**를 엽니다.)
-3. 환경을 점검합니다.
+Antigravity IDE(또는 Antigravity 확장을 사용하는 VS Code)를 열고, 아래 두 방법 중 하나로 실습 저장소를 받습니다. 터미널에서 Git 명령을 입력할 필요는 없습니다.
 
-   ```bash
-   # macOS
-   bash scripts/check_env.sh
+### Antigravity IDE
 
-   # Windows (PowerShell)
-   powershell -ExecutionPolicy Bypass -File scripts\check_env.ps1
-   ```
+시작 화면의 **Clone Repository**를 클릭합니다.
 
-4. R 패키지를 설치합니다. (사전 준비에서 했다면 건너뜁니다.) Python 가상환경과 의존성은 딥러닝 실습 중 `uv`로 만듭니다.
+![Antigravity IDE 시작 화면의 Clone Repository 버튼](assets/antigravity-clone.jpg)
 
-   ```bash
-   Rscript scripts/install_r_packages.R
-   ```
+### VS Code
+
+빈 창의 Welcome 화면에서 **Clone Git Repository...**를 클릭합니다.
+
+![VS Code Welcome 화면의 Clone Git Repository 버튼](assets/vscode-clone.jpg)
+
+두 IDE 모두 저장소 주소를 묻는 입력창에 `https://github.com/qmakescl/kses-workshop.git`을 붙여넣습니다. 저장 위치로 `kses/` 폴더를 선택하면 그 안에 `kses-workshop/` 폴더가 만들어집니다. 복제가 끝나면 안내에 따라 **`kses-workshop` 폴더를 엽니다.**
+
+개인 데이터를 가져온 분은 저장소 바깥의 `kses/private-data/`에 파일을 둡니다. 분석 환경과 Python 가상환경은 각 실습 단계에서 구성합니다.
 
 ## 폴더 구조
 
@@ -37,7 +37,7 @@ kses/
 │   ├─ R/                    ← R 스크립트
 │   ├─ python/               ← 실습 중 uv 프로젝트와 가상환경을 만들 폴더
 │   ├─ output/               ← 표, 그림
-│   └─ scripts/              ← 환경 점검·설치 스크립트
+│   └─ scripts/              ← 실습 중 사용할 보조 스크립트
 └─ private-data/             ← 실제 개인 데이터 (저장소 바깥, 에이전트 비노출)
 ```
 

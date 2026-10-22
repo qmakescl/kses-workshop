@@ -42,7 +42,7 @@ input_path  <- "../private-data/my_study.csv"
 output_path <- "../private-data/out/profile_private.csv"
 ```
 
-2단계. **VS Code 바깥의 별도 터미널**에서 실행하고, 결과를 직접 검토한 뒤 `docs/profile_private.csv`로 옮깁니다.
+2단계. **IDE 바깥의 별도 터미널**에서 실행하고, 결과를 직접 검토한 뒤 `docs/profile_private.csv`로 옮깁니다.
 
 ```bash
 Rscript R/00_profile_private.R
