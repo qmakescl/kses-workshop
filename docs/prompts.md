@@ -25,6 +25,8 @@ data/public/anchor.csv 의 구조를 요약하는 R 스크립트 R/00_profile.R 
 
 ## M2-2. 공개 데이터 코드북
 
+아래는 기존 예시입니다. 이번 워크숍에서는 이어지는 **워크숍용** 프롬프트를 사용합니다.
+
 ```text
 docs/profile_public.csv 를 바탕으로 코드북 초안 docs/codebook_public.csv 를 만들어줘.
 열은 variable, label, type, unit, values_range, missing_code, timepoint, note 로 해줘.
@@ -73,6 +75,7 @@ docs/profile_private.csv 는 내 연구 데이터의 구조 요약이다. 이 �
 ## M3. 제공 CSV 분석과 논문 비교
 
 ```text
+미리 제공된 docs/paper_notes.md 를 읽고 논문의 표본 흐름과 주요 결과를 확인해줘. 원문을 새로 검색하거나 메모에 없는 수치를 추정하지 마.
 docs/codebook_public.csv 를 참고해서 R/01_reproduce.R 을 작성해줘.
 이 작업은 제공 CSV의 분석이며 논문의 매칭 표본 346명을 재현한 결과라고 표현하지 마.
 1) 원본 행 수, ID만 있는 행을 제외한 행 수, Group 0/1의 행 수를 기록하고 공백 결측 처리와 범주 표기 통일 과정을 명시해.
@@ -87,6 +90,7 @@ docs/codebook_public.csv 를 참고해서 R/01_reproduce.R 을 작성해줘.
 ## M4. 회귀모형으로 재분석
 
 ```text
+미리 제공된 docs/paper_notes.md 를 읽고 논문의 주요 결과·결론·한계를 확인해줘. 원문을 새로 검색하거나 메모에 없는 결론을 추정하지 마.
 하위군을 나눠 반복 검정하는 대신 하나의 모형으로 분석하고 싶다.
 R/02_model.R 에 재파열 여부를 결과로 하는 로지스틱 회귀를 작성해줘.
 설명변수는 앵커 군, 파열 크기(면적 또는 전후·내외측 직경), 앵커 군과 파열 크기의 상호작용, 나이, 성별, 수술 전 강직도.
