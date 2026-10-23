@@ -58,15 +58,16 @@ docs/profile_private.csv 는 내 연구 데이터의 구조 요약이다. 이 �
 ../private-data 폴더는 절대 열지 마.
 ```
 
-## M3. 논문 재현
+## M3. 제공 CSV 분석과 논문 비교
 
 ```text
 docs/codebook_public.csv 를 참고해서 R/01_reproduce.R 을 작성해줘.
-1) 빈 행 제거, 공백 결측 처리, 범주 표기 통일을 먼저 하고 그 과정을 단계별 n 으로 출력
+이 작업은 제공 CSV의 분석이며 논문의 매칭 표본 346명을 재현한 결과라고 표현하지 마.
+1) 원본 행 수, ID만 있는 행을 제외한 행 수, Group 0/1의 행 수를 기록하고 공백 결측 처리와 범주 표기 통일 과정을 명시해.
 2) 논문의 포함 기준(전후·내외측 파열 직경 모두 30 mm 이하)을 적용한 뒤 앵커 군별 인구학적 특성 표 (gtsummary).
    연속형은 중앙값(IQR)과 평균±SD 를 모두 보여주고 Mann-Whitney U 검정
 3) 내외측 10 mm, 전후 10 mm 기준 4개 하위군 × 앵커 군별 재파열률. 기대빈도가 작으면 Fisher 정확검정
-4) 결과를 output/ 에 html 로 저장
+4) 결과를 output/ 에 html 로 저장하고, 실습 CSV의 단계별 행 수와 논문의 적격·분석 가능·매칭 후 표본 수를 구분해 비교 메모를 남겨줘.
 ```
 
 **B**: 위 프롬프트의 파일을 `data/mock/mock_private.csv`, `docs/codebook_private.csv`로 바꾸고, 출력 스크립트를 `R/01_table1_private.R`로, 입력 경로를 맨 위 변수로 두게 합니다.

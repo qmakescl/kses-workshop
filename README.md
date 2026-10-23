@@ -47,10 +47,13 @@ kses/
 
 `AGENTS.md`는 초기 저장소에 포함하지 않고, 실습 과정에서 함께 작성합니다.
 
-## 실습 데이터
+## 실습 논문과 공개 데이터
 
-Hawa A, et al. Is it enough to utilize a single anchor for repair of rotator cuff tears ≤ 3 * 3 cm²? *PLoS One*. 2025;20(4):e0320915.
-자세한 내용은 [data/public/README.md](data/public/README.md)를 참고하세요.
+Hawa A, et al. [Is it enough to utilize a single anchor for repair of rotator cuff tears ≤ 3 * 3 cm²?](https://doi.org/10.1371/journal.pone.0320915) *PLoS One*. 2025;20(4):e0320915.
+
+이 연구는 작은·중간 크기 회전근개 파열에서 단일 앵커와 다중 앵커 봉합 후 6개월 재파열률 및 임상 결과를 비교한 후향적 코호트 연구입니다. 논문 결과표는 성향점수 매칭 후 346명(각 군 173명)을 바탕으로 합니다. [원문](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0320915)과 [보충자료 S1 CSV](https://doi.org/10.1371/journal.pone.0320915.s001)를 먼저 확인하세요.
+
+실습 CSV는 1,309행 중 ID만 있는 99행을 제외하면 1,210행이고, 양쪽 파열 직경 30 mm 이하 기준을 적용하면 1,021행입니다. 이 수치는 **실습 파일에서 계산한 단계별 행 수**입니다. 논문의 적격 1,210명·분석 가능 1,170명·매칭 후 346명과 같은 표본으로 단정하지 마세요. 자료 출처와 읽기 주의사항은 [data/public/README.md](data/public/README.md)에 정리했습니다.
 
 ## 개인 데이터 원칙
 
@@ -63,7 +66,7 @@ Hawa A, et al. Is it enough to utilize a single anchor for repair of rotator cuf
 | 시간 | 내용 | 주요 파일 |
 |---|---|---|
 | 09:30 | 코드북 만들기 | `R/00_profile.R`, `docs/codebook_public.csv` |
-| 10:05 | 논문 재현 | `R/01_reproduce.R` |
+| 10:05 | 제공 CSV 분석과 논문 비교 | `R/01_reproduce.R` |
 | 10:30 | 회귀모형으로 재분석 | `R/02_model.R` |
 | 11:00 | MNIST CNN | `python/mnist_cnn.py` |
 | 11:25 | 로지스틱 회귀 vs 신경망 | `python/compare.py` |
