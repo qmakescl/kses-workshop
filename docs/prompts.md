@@ -107,8 +107,8 @@ OR 과 95% CI 표, forest plot 을 output/ 에 저장하고, 결과를 docs/pape
 ## M5. MNIST CNN
 
 ```text
-python/ 폴더에서 uv 프로젝트와 가상환경을 새로 만들어줘. Python 3.12를 사용하고,
-PyTorch(CPU), torchvision, numpy, pandas, scikit-learn, matplotlib를 의존성으로 추가해.
+이미 kses-workshop/ 루트에 만든 Python 3.11 uv 프로젝트와 .venv를 사용해줘. python/에 별도 가상환경을 만들지 마.
+루트의 pyproject.toml에 PyTorch(CPU), torchvision, numpy, pandas, scikit-learn, matplotlib를 의존성으로 추가해.
 Windows/Linux에서는 CPU 전용 PyTorch 패키지를 사용하고, uv run 으로 실행해.
 python/mnist_cnn.py 에 MNIST 를 분류하는 작은 CNN 을 작성해. CPU 에서 2 epoch 이내로 끝나야 해.
 학습·검증 손실 곡선, 테스트 정확도, 혼동행렬, 틀린 이미지 16장을 output/ 에 저장해줘.
