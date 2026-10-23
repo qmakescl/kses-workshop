@@ -4,6 +4,7 @@
 |---|---|---|
 | `prompts.md` | 모듈별 프롬프트 모음 | 미리 제공 |
 | `codebook_template.csv` | 코드북 열 구성 예시 | 미리 제공 |
+| `paper_notes.md` | 원 논문·정정 공지를 확인한 근거 메모. M2-2부터 읽기 | 미리 제공 |
 | `profile_public.csv` | 공개 데이터 구조 요약 | M2-1 |
 | `codebook_public.csv` | 공개 데이터 코드북 | M2-2 |
 | `profile_private.csv` | (B) 내 데이터 구조 요약. **직접 검토한 뒤** 이 폴더로 옮김 | M2-3 |

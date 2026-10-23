@@ -33,6 +33,18 @@ label, unit, timepoint 는 변수명으로 추정하되 추정한 칸에는 note
 의미를 알 수 없는 변수(V67 등)는 label 을 "불명" 으로 두고 note 에 이유를 적어.
 ```
 
+### 워크숍용: 미리 제공한 논문 메모 읽기
+
+원 논문을 다시 검색하거나 요약 파일을 새로 생성하지 않습니다. 위의 코드북 작성 요청과 함께 아래 프롬프트를 사용합니다.
+
+```text
+프로젝트에 미리 제공된 docs/paper_notes.md 를 읽고 논문 출처, 표본 흐름, 변수 정의와 근거가 무엇인지 먼저 짧게 요약해줘. 원문을 새로 검색하거나 paper_notes.md 를 다시 작성하지 마.
+docs/profile_public.csv 와 docs/paper_notes.md 를 참고해 docs/codebook_public.csv 초안을 만들어줘.
+열은 variable, label, type, unit, values_range, missing_code, timepoint, note 로 해줘.
+논문에서 확인된 정의는 paper_notes.md 의 절·표 근거를 note 에 적고, 변수명에서 추정한 내용은 "추정", 근거가 없는 항목은 "확인 필요"로 표시해줘.
+제공 CSV의 행 수와 논문의 매칭 표본을 같은 집단으로 취급하지 마. 결과를 보여주고 내가 코드북을 감수할 수 있게 해줘.
+```
+
 ## M2-3. B: 내 데이터 코드북과 모의 데이터
 
 1단계. `R/00_profile.R`을 `R/00_profile_private.R`로 복사하고 경로만 바꿉니다. (에이전트 없이 직접)
